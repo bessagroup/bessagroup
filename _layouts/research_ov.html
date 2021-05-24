@@ -4,34 +4,58 @@ bodyClass: page-research-list
 ---
 
 <div class="intro">
-  <div class="container">
-    <div class="row justify-content-start">
-      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
-        {{ content }}
-      </div>
-      {% if page.intro_image %}
-      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
-      </div>
-      {% endif %}
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+                {{ content }}
+            </div>
+            {% if page.intro_image %}
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+            </div>
+            {% endif %}
+        </div>
     </div>
-  </div>
 </div>
 
 <div class="container pt-6 pb-6">
-  <div class="row">
-    {% assign weighted_research_ov = site.research | sort: "weight" %}
-    {% for research in weighted_research_ov %}
-    <div class="col-12 col-md-6 mb-3">
-      <div class="research research-summary">
-        <div class="research-content">
-          <h2 class="research-title">
-            <a href="{{ research.url | relative_url }}">{{ research.title }}</a>
-          </h2>
-          <p>{{ research.content | markdownify | strip_html | truncate: 100 }}</p>
-        </div>
+    <div class="row">
+        {% assign featured_research = site.research | where: "featured", true | sort: "weight" %}
+        {% for research in featured_research %}
+        <div class="col-12 col-md-12 mb-5">
+          <div class="research research-summary research-summary-large">
+              <div class="research-meta">
+                  <h2 class="research-name"><a href="{{ research.url | relative_url }}">{{ research.title }}</a></h2>
+                  <h3 class="research-description">{{ research.topic }}</h3>
+                  {% if research.doi %}
+                  <h4 target="_blank">DOI:<a href="{{ research.doi }}">{{ research.doi}}</a></h4>
+                  {% endif %}
+              </div>{% if research.image %}
+              <div class="research-image">
+                  <img alt="{{ research.title }}" class="w3-round" src="{{ research.image | relative_url }}" />
+              </div>
+              {% endif %}
+              <div class="research-content">{{ research.content | truncate: 120 }}</div>
+          </div>
       </div>
+      {% endfor %}
     </div>
-    {% endfor %}
-  </div>
+    <div class="row pt-6 pb-6">
+        {% assign all_research = site.research | where: "featured", false | sort: "weight" %}
+        {% for research in all_research %}
+        <div class="col-12 col-md-4 mb-3">
+            <div class="research research-summary">
+                {% if research.image %}
+                <div class="research-image">
+                    <img alt="{{ research.title }}" class="w3-round" src="{{ research.image | relative_url }}" />
+                </div>
+                {% endif %}
+                <div class="research-meta">
+                    <h2 class="research-name"><a href="{{ research.url | relative_url }}">{{ research.title }}</a></h2>
+                    <h3 class="research-description">{{ research.topic }}</h3>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>

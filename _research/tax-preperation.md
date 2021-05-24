@@ -1,8 +1,11 @@
 ---
 title: "Tax Preperation"
 date: 2018-11-18T12:33:46+10:00
-featured: true
-weight: 6
+featured: false
+image: '/images/illustrations/reading.svg'
+topic: 'Data science'
+doi: 'https://doi.org/10.1109/5.771073'
+weight: 1
 layout: research
 ---
 

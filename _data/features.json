@@ -1,17 +1,12 @@
 [
   {
-    "title": "Free Consultation",
+    "title": "Artificial Intelligence",
     "description": "New clients receive an obligation free consultation.",
-    "image": "images/features/noun_branding_1885335.svg"
+    "image": "images/features/robots-and-drones.png"
   },
   {
-    "title": "Certified Accountants",
+    "title": "Materials Discovery",
     "description": "All members of our team are certified accountants.",
-    "image": "images/features/noun_The Process_1885341.svg"
-  },
-  {
-    "title": "Tax Compliance",
-    "description": "We stay up to date on the latest changes to the tax code.",
-    "image": "images/features/noun_3d modeling_1885342.svg"
+    "image": "images/features/found-a-treasure.png"
   }
 ]

@@ -1,14 +1,15 @@
 ---
-title: "Accounting"
+title: 'Project 1'
 date: 2018-11-18T12:33:46+10:00
 featured: true
+image: '/images/illustrations/reading.svg'
+topic: 'Data science'
+doi: 'https://doi.org/10.1109/5.771073'
 weight: 1
 layout: research
 ---
 
 Financial accounting (or financial accountancy) is the field of accounting concerned with the **summary, analysis and reporting** of financial transactions related to a business.
-
-![Accounting Research](/images/austin-distel-nGc5RT2HmF0-unsplash.jpg)
 
 # Objectives 
 

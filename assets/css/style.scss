@@ -3,11 +3,11 @@
 ---
 
 // Colors
-$primary: #007188;
-$secondary: #61a4b4;
+$primary: #0066a2;
+$secondary: #7A4988;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #f0f8ff;
+$white-offset: lighten($primary, 65%);
 $steel: #5C5A5A;
 
 // Links
@@ -21,9 +21,9 @@ $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
 $font-family-heading: 'Playfair Display', serif, -apple-system;
 
 // Footer
-$footer-background-color: $primary;
+$footer-background-color: darken($primary, 10%);
 $footer-text-color: $white;
-$sub-footer-background-color: darken($primary, 10%);
+$sub-footer-background-color: darken($primary, 30%);
 $sub-footer-text-color: $white;
 
 // Bootstrap
@@ -59,7 +59,8 @@ $sub-footer-text-color: $white;
 // Pages
 @import 'pages/home';
 @import 'pages/team/team-summary';
-@import 'pages/research_ov/page-research_ov-single';
+@import 'pages/research/research-summary';
+@import 'pages/research/research-single';
 
 body {
   font-size: 16px;

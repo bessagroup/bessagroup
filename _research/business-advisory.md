@@ -2,6 +2,9 @@
 title: "Business Advisory"
 date: 2018-11-28T15:14:39+10:00
 featured: true
+image: '/images/illustrations/reading.svg'
+topic: 'Data science'
+doi: 'https://doi.org/10.1109/5.771073'
 weight: 2
 layout: research
 ---
