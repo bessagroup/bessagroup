@@ -3,11 +3,11 @@
 ---
 
 // Colors
-$primary: #E5261F;
-$secondary: #f88379;
+$primary: #007188;
+$secondary: #61a4b4;
 $black: #2f2f41;
 $white: #ffffff;
-$white-offset: #fff6f8;
+$white-offset: #f0f8ff;
 $steel: #5C5A5A;
 
 // Links
@@ -59,7 +59,7 @@ $sub-footer-text-color: $white;
 // Pages
 @import 'pages/home';
 @import 'pages/team/team-summary';
-@import 'pages/services/page-services-single';
+@import 'pages/research_ov/page-research_ov-single';
 
 body {
   font-size: 16px;
