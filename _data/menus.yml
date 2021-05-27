@@ -9,19 +9,19 @@ main:
     url: "/team/"
     weight: 2
   - name: "Publications"
-    url: "#"
+    url: "/publications/"
     weight: 4
   - name: "Teaching"
-    url: "#"
+    url: "/teaching/"
     weight: 5
   - name: "Vacancies"
-    url: "#"
+    url: "/vacancies/"
     weight: 6
   - name: "News"
-    url: "#"
+    url: "/news/"
     weight: 7
   - name: "Code"
-    url: "#"
+    url: "/code/"
     weight: 8
 
 footer:
