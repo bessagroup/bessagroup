@@ -13,7 +13,8 @@ If this is your first time using Jekyll, please follow the [Jekyll docs](https:/
 1. Fork the repo to your account
 2. Create a new branch
 3. Do some contribution/improvement
-4. Create pull request to main repo
+4. Test changes locally
+5. Create a pull request to main repo
 
 
 To run the repo locally, navigate to the theme directory and run:
