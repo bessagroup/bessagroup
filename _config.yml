@@ -1,11 +1,11 @@
-baseurl: '/NMudunuru/'
+baseurl: ''
 permalink: pretty
 title: 'Bessa Group'
 
 google_analytics_id: ""
 
 homepage:
-  show_call_box: true
+  show_call_box: false
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -16,7 +16,7 @@ footer:
   copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">zerostatic</a> | Free illustrations by <a class="icons8" href="https://icons8.com/illustrations/style--pixeltrue">icons8</a>'
 
 seo:
-  meta_og_title: "Jekyll Serif Theme"
+  meta_og_title: "Bessa Research Group"
   meta_og_type: "website"
   meta_og_url: "https://jekyll-serif.netlify.app"
   meta_og_image: "https://raw.githubusercontent.com/zerostaticthemes/jekyll-serif-theme/master/screenshots/tn.png"
@@ -26,10 +26,11 @@ seo:
   meta_twitter_creator: "@zerostaticio"
 
 collections:
-  research:
-    output: true
   team:
     output: true
+  research:
+    output: true
+
 
 sass:
   indentWidth: 4

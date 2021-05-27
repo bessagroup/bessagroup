@@ -1,5 +1,5 @@
 ---
-title: "Business Sales"
+title: "Awesome Project 5"
 date: 2018-11-28T15:15:26+10:00
 featured: true
 image: '/images/illustrations/reading.svg'
