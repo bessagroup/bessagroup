@@ -1,6 +1,6 @@
 # BessaGroup
 
-Website for the research group.
+Website for the research group based on the [JekyllSerif Theme](https://github.com/zerostaticthemes/jekyll-serif-theme/blob/master/).
 
 ## Installation
 
