@@ -1,0 +1,55 @@
+---
+layout: default
+bodyClass: page
+---
+<div class="intro">
+    <div class="container">
+        <div class="row justify-content-start">
+            <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+                <h1 class="title">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+            {% if page.intro_image %}
+            <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+                <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relative_url }}" />
+            </div>
+            {% endif %}
+        </div>
+    </div>  
+</div>
+
+<div class="container">
+    <div class="publication-page">
+        {% assign all_publications = site.publication %}
+        {% for entry in all_publications %}
+            <div class="publication">
+                <h4 class="heading"> {{ entry.title }} </h4>
+                {% assign authors = entry.authors | split:";" %}
+                <div style="display:inline-block; font-style: italic; ">Authors:</div>
+                {% for author in authors %}
+                    <div class="author"> {{ author }} </div>
+                {% endfor %}
+                <div class="info">
+                    <div class="itemBox">
+                            <div class="item">abstract</div> 
+                            <div class="content">{{entry.abstract}}</div>
+                    </div>
+                    <div class="itemBox">
+                            <div class="item">bibtex</div> 
+                            <div class="content">{{entry.content}}</div>
+                    </div>
+                    {% if entry.doi != '' %} 
+                    <div class="itemBox">
+                            <div class="item">DOI</div> 
+                            <div class="content"><a href="{{entry.doi}}">{{entry.doi}}</a></div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<script type="text/javascript" src="{{ '/assets/js/jQuery.min.js' | relative_url }}"></script>
+<script type="text/javascript" src="{{ '/assets/js/Toggle.js' | relative_url }}"></script>

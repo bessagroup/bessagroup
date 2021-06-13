@@ -1,0 +1,61 @@
+.publication {
+    margin: 0;
+    border-bottom:2px solid $white-offset;
+    .heading {
+        font-family: $font-family-heading;
+        color:$primary;
+        font-size:20px;
+    }
+    .author {
+        display: inline-block;
+        border-right: 1px solid $primary;
+        margin-bottom:5px;
+        padding:0 5px;
+    }
+    .info {
+        background-color: $white-offset;
+        margin: 10px;
+        min-height: 10px;
+        .itemBox {
+            display: inline-block;
+            .item {
+                margin: 5px;
+                padding: 2px 5px;
+                background-color: $white;
+                border: 1px solid $primary;
+                border-radius: 3px;
+                color: $primary;
+                text-transform: capitalize;
+            }
+            .item:hover {
+                background-color: $primary;
+                color:$white;
+            }
+            .item:active {
+                background-color: $primary;
+                color:$white;
+                font-weight: bold;
+            }
+            .content {
+                display: none;
+                background-color: $primary;
+                padding:5px 10px; 
+                color: $white !important;
+                p {
+                    color: $white;
+                }
+                a {
+                    color:$white;
+                    text-decoration:none;
+                }
+                a:hover {
+                    color:$white;
+                    font-weight: bold;
+                }
+                a:visited {
+                    color:$white;
+                }
+            }
+        }
+    }
+}

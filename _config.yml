@@ -30,7 +30,7 @@ collections:
     output: true
   research:
     output: true
-
+  publication:
 
 sass:
   indentWidth: 4
@@ -50,4 +50,4 @@ exclude:
   - vendor/ruby/
   - LICENSE.md
   - LICENSE
-  - README.md
+  - Template_README.md
