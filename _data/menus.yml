@@ -1,21 +1,33 @@
 main:
+  - name: "Home"
+    url: "/"
+    weight: 1
   - name: "Research"
     url: "/research/"
-    weight: 2
+    weight: 3
   - name: "Team"
     url: "/team/"
-    weight: 3
-  - name: "About"
-    url: "/about/"
+    weight: 2
+  - name: "Publications"
+    url: "/publications/"
     weight: 4
-  - name: "Contact"
-    url: "/contact/"
+  - name: "Teaching"
+    url: "/teaching/"
     weight: 5
+  - name: "Vacancies"
+    url: "/vacancies/"
+    weight: 6
+  - name: "News"
+    url: "/news/"
+    weight: 7
+  - name: "Code"
+    url: "/code/"
+    weight: 8
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
   - name: "Contact"
-    url: "/contact/"
+    url: "#"
     weight: 2

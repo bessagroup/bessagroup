@@ -1,5 +1,5 @@
 ---
-title: "Tax Preperation"
+title: "Awesome Project 2"
 date: 2018-11-18T12:33:46+10:00
 featured: false
 image: '/images/illustrations/reading.svg'
