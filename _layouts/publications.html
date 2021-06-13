@@ -25,7 +25,10 @@ bodyClass: page
             <div class="publication">
                 <h4 class="heading"> {{ entry.title }} </h4>
                 {% assign authors = entry.authors | split:";" %}
-                <div style="display:inline-block; font-style: italic; ">Authors:</div>
+                <div style="display:inline-block; font-style: italic; 
+                margin:0 15px;">
+                    Authors:
+                </div>
                 {% for author in authors %}
                     <div class="author"> {{ author }} </div>
                 {% endfor %}
