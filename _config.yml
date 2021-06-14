@@ -9,8 +9,8 @@ homepage:
 
 logo:
   mobile: "images/logo/BrG_video_watermark.svg"
-  desktop: "images/logo/BrG_banner_youtube.svg"
-  desktop_height: "36px"
+  desktop: "images/logo/banner_youtube2.svg"
+  desktop_height: "40px"
 
 footer:
   copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">zerostatic</a> | Free illustrations by <a class="icons8" href="https://icons8.com/illustrations/style--pixeltrue">icons8</a>'
