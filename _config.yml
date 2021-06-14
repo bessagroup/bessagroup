@@ -1,4 +1,4 @@
-baseurl: '/bessagroup/'
+baseurl: ''
 permalink: pretty
 title: 'Bessa Group'
 
@@ -8,8 +8,8 @@ homepage:
   show_call_box: false
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  desktop: "images/logo/logo.svg"
+  mobile: "images/logo/BrG_video_watermark.svg"
+  desktop: "images/logo/BrG_banner_youtube.svg"
   desktop_height: "36px"
 
 footer:
