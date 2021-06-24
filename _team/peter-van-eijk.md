@@ -3,9 +3,13 @@ title: "Peter Van Eijk"
 date: 2018-11-19T10:47:58+10:00
 draft: false
 image: "images/team/peter-van-eijk-711986-unsplash.jpg"
-jobtitle: "Director"
+jobtitle: "Principal investigator"
+personal-website: "https://mabessa.github.io/"
 linkedinurl: "https://www.linkedin.com/"
-promoted: true
+githuburl: "https://www.github.com/"
+googlescholarurl: "https://www.google.com/"
+twitterurl: "https://www.twitter.com/"
+email: "peter-van-eijk@example.com"
 weight: 1
 layout: team
 ---
