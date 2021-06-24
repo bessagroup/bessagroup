@@ -1,4 +1,5 @@
-baseurl: '/bessagroup'
+baseurl: ''
+
 permalink: pretty
 title: 'Bessa Group'
 
@@ -8,9 +9,9 @@ homepage:
   show_call_box: false
 
 logo:
-  mobile: "images/logo/logo-mobile.svg"
-  desktop: "images/logo/logo.svg"
-  desktop_height: "36px"
+  mobile: "images/logo/BrG_video_watermark.svg"
+  desktop: "images/logo/banner_youtube2.svg"
+  desktop_height: "40px"
 
 footer:
   copyright_text: 'Free Jekyll theme by <a class="zerostatic" href="https://www.zerostatic.io">zerostatic</a> | Free illustrations by <a class="icons8" href="https://icons8.com/illustrations/style--pixeltrue">icons8</a>'
@@ -30,7 +31,7 @@ collections:
     output: true
   research:
     output: true
-
+  publication:
 
 sass:
   indentWidth: 4
@@ -50,4 +51,4 @@ exclude:
   - vendor/ruby/
   - LICENSE.md
   - LICENSE
-  - README.md
+  - Template_README.md
