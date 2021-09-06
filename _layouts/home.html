@@ -3,9 +3,7 @@ title: Bessa Group - Computational mechanics and material science
 layout: default
 bodyClass: page-home
 ---
-<div class='jekyll-twitter-plugin' align="center">
-  {% twitter https://twitter.com/anaik96 maxwidth=500 limit=5 %}
-</div>
+
 
 <div class="intro">
   <div class="container">
@@ -28,19 +26,31 @@ bodyClass: page-home
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
+      <div class="col-12 col-md-8 mb-1">
+
       {% for research in site.research %}
-      <div class="card col-12 col-md-4 mb-1" style="width: 18rem">
-        <div class="research research-summary" style="box-shadow: 3rem;">
-          <div class="research-content research-card">
-            <img alt="{{ research.title }}" class="card-img-top" width="100%" src="{{ research.image | relURL }}" />
-            <h2 class="research-title">
-              <a href="{{ research.url | relative_url }}">{{ research.title }}</a>
-            </h2>
-            <p>{{ research.content | markdownify | strip_html | truncate: 100 }}</p>
+        <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img alt="{{ research.title }}" class="card-img" width="100%" src="{{ research.image | relURL }}" />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title"><a href="{{ research.url | relative_url }}">{{ research.title }}</a></h5>
+                <p class="card-text">{{ research.content | markdownify | strip_html | truncate: 100 }}</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       {% endfor %}
+    </div>
+
+      
+      <div class="card col-2 col-md-4 mb-1">
+        <div class='jekyll-twitter-plugin' align="center">
+          {% twitter https://twitter.com/anaik96 maxwidth=500 limit=2 %}
+        </div>
+      </div>
     </div>
     <div class="row justify-content-center">
       <div class="col-auto" style="margin-top:3rem">
@@ -66,7 +76,7 @@ bodyClass: page-home
         </div>
       </div>
       {% endfor %}
-
+      
     </div>
   </div>
 </div>
